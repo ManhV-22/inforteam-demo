@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script language="JavaScript" src="login.js"></script>
+    <title>Login MST-Shop</title>
+</head>
+<body>
+    <div class="head_form">
+        <h1>Login</h1>
+        <form action="">
+            <div class="info user_box">
+                <input type="text" id="username" name="User" placeholder="User name ">
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="info pw_box">
+                <input type="password" id="password" name="pw" placeholder="Password">
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <div class="remember_forgot">
+                <label for="">
+                    <input type="checkbox">Remember me
+                </label>
+                <a href="#">Forgot password</a>
+            </div>
+            <div class="login_link">
+                <button type="button" onclick="checkLogin()">Login</button>
+            </div>
+            <div class="register_link">
+                <p>Don't have an account? <a href="#">Register</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

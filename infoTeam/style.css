@@ -1,0 +1,257 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    user-select: none;
+}
+.main_box{
+    /* background-color: blue; */
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 30px;
+    /* border: 2px solid rgba(255, 255, 255, .5); */
+    border-radius: 5px;
+    /* z-index: 0; */
+
+}
+.logo_name{
+    /* background-color: aqua; */
+    width: 500px;
+    margin: 0px auto;
+    margin-top: 20px;
+    text-align: center;
+
+}
+.logo_name img{
+    display: block;
+    width: 200px;
+    margin: 0px auto;
+}
+.logo_name h1{
+    font-family:'Courier New', Courier, monospace;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+li{
+    display: block;
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    margin-bottom: 25px;
+    /* border-top-left-radius: 150px;
+    border-top-right-radius: 150px; */
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px violet;
+    cursor: pointer;
+    
+}
+.info{
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    line-height: 40px;
+}
+.mem{
+    position: relative;
+}
+.mem_1{
+    
+    background-image: url('dxm.png');
+    background-size: cover;
+}
+.mem_2{
+    
+    background-image: url('tns.png');
+    background-size: cover;
+}
+.mem_3{
+    
+    background-image: url('hvt.png');
+    background-size: cover;
+}
+.mem .info{
+    position: absolute;
+    bottom: 0px;
+}
+.info button{
+    width: 100%;
+    height: 100%;
+    background: #333;
+    color: #fff;
+    font-family: 'Arial';
+    border: none;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+    /* background-color: transparent; */
+}
+
+.list_member li:hover{
+    width: 310px;
+    height: 410px;
+}
+
+.list_member li button::before{
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background-color: violet;
+    transform: translate(-50%, 0);
+    z-index: -1;
+    transition: width 0.25s ease-in-out;
+}
+
+.list_member li button:hover::before{
+    width: 100%;
+}
+
+.sub_box .box-info{
+    color: #fff;
+    width: 865px; 
+    height: 400px;
+    background-color: #333;
+    border: 2px solid blue;
+    position: absolute;
+    top: 200px;
+    left: 355px;
+}
+h1{
+    color: lime
+}
+h3{
+    color: violet;
+}
+
+/* mem1  */
+#info-mem-1{
+    display: none;
+    text-align: center;
+    font-family: 'Arial';
+}
+#info-mem-1 p{
+    font-size: 20px;
+    line-height: 40px;
+}
+/* mem2  */
+#info-mem-2{
+    display: none;
+    text-align: center;
+    font-family: 'Arial';
+}
+#info-mem-2 p{
+    font-size: 20px;
+    line-height: 50px;
+}
+
+/* mem3  */
+#info-mem-3{
+    display: none;
+    text-align: center;
+    font-family: 'Arial';
+}
+#info-mem-3 p{
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.btn_box{
+    width: 92px;
+    height: 46px;
+    margin: 0 auto;
+    background-color: tomato;
+}
+
+/* btn1 */
+.btn_box #btn{
+    padding: 15px 30px;
+    border: none;
+    outline: none;
+    background-color:transparent;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+.btn_box #btn::before{
+    content: "";
+    width: 0px;
+    height: 110px;
+    background-color: aqua;
+    position: absolute;
+    top: -32px;
+    left: 50%;
+    transform: translate(-50%, 0) rotate(-60deg);
+    z-index: -1;
+    transition: width 0.25s ease;
+}
+.btn_box #btn:hover::before{
+    width: 60px;
+}
+
+/* btn2 */
+.btn_box #btn-2{
+    padding: 15px 30px;
+    border: none;
+    outline: none;
+    background-color:transparent;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+.btn_box #btn-2::before{
+    content: "";
+    width: 0px;
+    height: 110px;
+    background-color: aqua;
+    position: absolute;
+    top: -32px;
+    left: 50%;
+    transform: translate(-50%, 0) rotate(-60deg);
+    z-index: -1;
+    transition: width 0.25s ease;
+}
+.btn_box #btn-2:hover::before{
+    width: 60px;
+}
+
+/* btn3 */
+.btn_box #btn-3{
+    padding: 15px 30px;
+    border: none;
+    outline: none;
+    background-color:transparent;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+.btn_box #btn-3::before{
+    content: "";
+    width: 0px;
+    height: 110px;
+    background-color: aqua;
+    position: absolute;
+    top: -32px;
+    left: 50%;
+    transform: translate(-50%, 0) rotate(-60deg);
+    z-index: -1;
+    transition: width 0.25s ease;
+}
+.btn_box #btn-3:hover::before{
+    width: 60px;
+}

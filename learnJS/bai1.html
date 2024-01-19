@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+    <script>
+        function nhapMang() {
+            var inputElement = document.getElementById("n").value;
+            var xElement = document.getElementById("x").value;
+            var viTriElement = document.getElementById("viTri").value;
+
+            var inputArray = inputElement.split(",");
+
+            // Thêm phần tử X vào vị trí được chỉ định
+            inputArray.splice(parseInt(viTriElement), 0, xElement);
+
+            // Hiển thị mảng sau khi thêm phần tử X
+            document.getElementById("output").innerHTML = "Mảng sau khi thêm phần tử X là: " + inputArray.join(", ");
+        }
+
+        function xoaPhanTu() {
+            var inputArray = document.getElementById("n").value.split(",");
+            var yElement = document.getElementById("y").value;
+
+            // Gọi hàm xóa phần tử Y khỏi mảng
+            inputArray = xoaPhanTuMang(inputArray, yElement);
+
+            // Hiển thị mảng sau khi xóa phần tử Y
+            document.getElementById("output").innerHTML = "Mảng sau khi xóa phần tử Y là: " + inputArray.join(", ");
+        }
+
+        function xoaPhanTuMang(arr, phanTu) {
+            var index = arr.indexOf(phanTu);
+            if (index !== -1) {
+                arr.splice(index, 1);
+            }
+            return arr;
+        }
+    </script>
+</head>
+<body>
+    <label for="n">Nhap mang (các phần tử cách nhau dấu phẩy): </label>
+    <input type="text" id="n"><br>
+    <label for="x">Nhap phan tu X muon them vao mang: </label>
+    <input type="text" id="x"><br>
+    <label for="viTri">Nhap vi tri them: </label>
+    <input type="text" id="viTri"><br>
+    <button onclick="nhapMang()">Them phan tu X</button><br>
+
+    <label for="y">Nhap phan tu Y muon xoa khoi mang: </label>
+    <input type="text" id="y"><br>
+    <button onclick="xoaPhanTu()">Xoa phan tu Y</button>
+    
+    <div id="output"></div>
+</body>
+</html>

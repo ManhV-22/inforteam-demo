@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script language="JavaScript" src="main.js"></script>
+    <title>MST-Team</title>
+</head>
+<body>
+
+    <!-- 3 thẻ thông tin  -->
+    <div class="main_box">
+        <div class="logo_name">
+            <img src="img-logo2.png" alt="">
+            <h1>MST Member</h1>
+        </div>
+       <ul class="list_member">
+            <li class="mem mem_1" id="member-1">
+                <div class="info" id="dangxuanmanh" onclick="fbDangXuanManh()">
+                    <button>Facebook Dang Xuan Manh</button>
+                </div>
+            </li>
+            <li class="mem mem_2" id="member-2">
+                <div class="info" id="tranngocson" onclick="fbTranNgocSon()">
+                    <button>Facebook Tran Ngoc Son</button>
+                </div>
+            </li>
+            <li class="mem mem_3" id="member-3">
+                <div class="info" id="hoanvanthang" onclick="fbHoangVanThang()">
+                    <button>Facebook Hoang Van Thang</button>
+                </div>
+            </li>
+       </ul>
+    </div>
+
+
+    <!-- 3 box   -->
+    <div class="sub_box">
+        <div class="box-info" id="info-mem-1">
+            <h1>MST-Member</h1>
+            <h2><b style="color: blue">Sinh viên</b>: <i style="color: orangered">Đặng Văn Mạnh</i> <b style="color: red">DCCNTT-14C3</b></h2>
+            <h3>MSV: 20232652</h3>
+            <p><b style="color: orange">Sở thích</b>: <b style="color: greenyellow">Thể thao</b>. Đặc biệt là <b style="color: greenyellow"><i>thể thao điện tử</i></b>.<br>Đam mê khám phá <i style="color: greenyellow">thế giới số</i>, từ lập trình đến các công nghệ mới.<br>Ngoài ra, tôi cũng quan tâm đến các xu hướng công nghệ mới như <i style="color: greenyellow">trí tuệ nhân tạo</i>  và <i style="color: greenyellow">phát triển ứng dụng di động</i>.<br>Tôi sẽ trở thành <b><i style="color: greenyellow">Fullstack Developer trong tương lai.</i></b></p>
+            <div class="btn_box"><button id="btn">Đóng</button></div>
+        </div>
+        <div class="box-info" id="info-mem-2">
+            <h1>MST-Member</h1>
+            <h2><b style="color: blue">Sinh viên</b>: <i style="color: orangered">Trần Ngọc Sơn</i> <b style="color: red">DCCNTT-14C3</b></h2>
+            <h3>MSV: 20232472</h3>
+            <p><b style="color: orange">Sở thích</b>: <b style="color: greenyellow">Thể thao</b>. Đặc biệt là <b style="color: greenyellow"><i>Bóng đá</i></b>.<br>Đam mê về <i style="color: greenyellow">công nghệ phần mềm</i>.<br>Mong muốn của tôi là trở thành <b><i style="color: greenyellow">Backend Developer</i></b>.</p>
+            <div class="btn_box"><button id="btn-2">Đóng</button></div>
+        </div>
+        <div class="box-info" id="info-mem-3">
+            <h1>MST-Member</h1>
+            <h2><b style="color: blue">Sinh viên</b>: <i style="color: orangered">Hoàng Văn Thắng</i> <b style="color: red">DCCNTT-14C3</b></h2>
+            <h3>MSV: 20232411</h3>
+            <p><b style="color: orange">Sở thích</b>: <b style="color: greenyellow">Thể thao</b>. Đặc biệt là <b style="color: greenyellow"><i>Gym</i></b>.<br>Đam mê về <i style="color: greenyellow">công nghệ phần mềm</i>.<br>Ngoài ra tôi đam mê <i style="color: greenyellow">thời trang</i> và muốn trở thành <b><i style="color: red">chủ </i></b>của một <i style="color: greenyellow">thương hiệu thời trang.</i></p>
+            <div class="btn_box"><button id="btn-3">Đóng</button></div>
+        </div>
+
+        
+    </div>
+
+    <script>
+        // fbDangXuanManh
+        var member1 = document.getElementById('member-1');
+        var infoMem1 = document.getElementById('info-mem-1');
+        var btn = document.getElementById('btn');
+        member1.addEventListener('click', function(){
+            infoMem1.style.display = 'block';
+        });
+        btn.addEventListener('click', function(){
+            infoMem1.style.display = 'none';
+        });
+
+        // fbTranNgocSon
+        var member2 = document.getElementById('member-2');
+        var infoMem2 = document.getElementById('info-mem-2');
+        var btn2 = document.getElementById('btn-2');
+        member2.addEventListener('click', function(){
+            infoMem2.style.display = 'block';
+        });
+        btn2.addEventListener('click', function(){
+            infoMem2.style.display = 'none';
+        });
+
+        // fbHoangVanThang
+        var member3 = document.getElementById('member-3');
+        var infoMem3 = document.getElementById('info-mem-3');
+        var btn3 = document.getElementById('btn-3');
+        member3.addEventListener('click', function(){
+            infoMem3.style.display = 'block';
+        });
+        btn3.addEventListener('click', function(){
+            infoMem3.style.display = 'none';
+        });
+    </script>
+</body>
+</html>

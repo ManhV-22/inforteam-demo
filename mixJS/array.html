@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dang Xuan Manh</title>
+
+    <script>
+        function tronSapXep(){
+            var arrayA =document.getElementById("arrayAInput").value.split(",").map(Number);
+            var arrayB =document.getElementById("arrayBInput").value.split(",").map(Number);
+            var mergedArray = arrayA.concat("arrayB");
+        }
+        for(var i=0; i < mergedArray.length; i++){
+            for(var j=0; j < mergedArray.length - i -1; j++){
+                if(mergedArray[j] > mergedArray[j + 1]){
+                    var temp=mergedArray[j];
+                    mergedArray[j] = mergedArray[j + 1];
+                    mergedArray[j+1] = temp;
+                }
+            }
+            document.getElementById("result").innerHtml = "Mang Sau da tron va sap xep: " +  mergedArray;
+        }
+    </script>
+</head>
+<body>
+    <label for="arrayAInput">Nhap mang A (Cac phan tu cach nhau dau phay ,)</label>
+    <input type="text" id="arrayAInput">
+    <label for="arrayAInput">Nhap mang B (Cac phan tu cach nhau dau phay ,)</label>
+    <input type="text" id="arrayBInput">
+    <button type="tronSapXep">Tron Sap Xep</button>
+</body>
+</html>

@@ -1,0 +1,59 @@
+html{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('bgForm.webp');
+    background-size: cover;
+    position: absolute;
+    top: 225px;
+
+}
+label{
+    color: #fff;
+}
+.container{
+    background-image: url('bgForm.webp');
+    background-size: cover;
+    width: 330px;
+    height: 220px;
+    border: 2px solid green;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    margin: 15px 10px;
+}
+div.user_name, div.user_pw{
+    display: flex;
+    justify-content: space-between;
+}
+.button-login{
+    display: flex;
+}
+.login{
+    width: 100px;
+    height: 30px;
+    margin: 5px auto;
+    border-radius: 3px;
+}
+a{
+    font-size: 16px;
+    color: #fff;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    text-decoration: none;
+}
+.login:hover{
+    background-color: orange;
+    color: #fff;
+}
+a:hover{
+    color: blue;
+}
+    
